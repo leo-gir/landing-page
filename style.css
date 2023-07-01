@@ -1,9 +1,22 @@
+:root{
+    --background: #9d1561;
+    --rosa: #9d1561;
+    --bg-violeta: #350e45;
+    --celeste: #75BFC8;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+@font-face {
+    font-family: "Casadio";
+    src:url("./assets/fonts/hadfield_strip.otf");
 }
 
 nav{
@@ -34,4 +47,167 @@ nav a:hover{
 .active{
     color: #CBCBCB;
     
+}
+
+main{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero{
+    display: flex;
+    margin: 0px 200px 50px 200px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./assets/img/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 60px;
+}
+
+.hero-title{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 750px;
+    
+}
+
+.hero-title h2{
+    display: flex;
+    font-family: Casadio;
+    font-weight: 200;
+    font-size: 80px;
+    color: var(--rosa);
+    text-align: end;
+}
+
+.hero-text{
+    display: flex;
+    padding-bottom: 80px;
+    /* padding-left: 80px; */
+}
+
+.hero-text p{
+    display: flex;
+    color:black;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.hero-btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    padding-right: 15px;
+}
+
+.hero-btn a{
+    display: flex;
+    border-radius: 5px;
+    background-color: white ;
+    padding: 15px;
+    border: none;
+    color: var(--bg-violeta);
+    font-weight: bolder;
+    min-width: 150px;
+    justify-content: center;
+    
+    
+}
+
+.hero-btn a:nth-child(2){
+    background-color: var(--bg-violeta);
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.hero-img img{
+    display: flex;
+    border-radius: 20px;
+}
+
+#about{
+    display: flex;
+    margin: 0px 200px 0 0px 200px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title{
+    display: flex;
+}
+
+.about-title h1{
+    display:flex;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-weight: 900;
+    font-size: 140px;
+    color: var(--bg-violeta);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-subtitle h2{
+    display: flex;
+    color: var(--celeste);
+    font-size: 55px;
+    text-align: center;
+}
+
+.about-subtitle h3{
+    display: flex;
+    color: var(--celeste);
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.about-text{
+    display: flex;
+    max-width: 1000px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
 }
