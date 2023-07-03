@@ -71,7 +71,6 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1800px;
-    /* max-height: 7000px; */
     margin-top: 120px;
 }
 
@@ -91,7 +90,6 @@ main{
     font-size: 80px;
     color: var(--rosa);
     padding-bottom: 50px;
-    /* padding-left: 40px; */
 }
 
 .hero-info p{
@@ -102,6 +100,7 @@ main{
     font-style: italic;
     padding-bottom: 50px;
     padding-left: 40px;
+    line-height: 45px;
 }
 
 .hero-btn{
@@ -176,6 +175,7 @@ main{
     font-size: 22px;
     max-width: 1400px;
     text-align: center;
+    line-height: 30px;
 }
 
 /* RESPONSIVE */
