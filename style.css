@@ -14,6 +14,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
 @font-face {
     font-family: "Casadio";
     src:url("./assets/fonts/hadfield_strip.otf");
@@ -23,7 +24,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #341346;
+    background-color: var(--bg-violeta);
     padding:20px;
     width: 100%;
     height: 120px;
@@ -85,11 +86,11 @@ main{
     justify-content: flex-end;
     align-items: center;
     text-align: end;
+    padding-bottom: 50px;
     font-family: 'Casadio', sans-serif;
     font-weight: 200;
     font-size: 80px;
     color: var(--rosa);
-    padding-bottom: 50px;
 }
 
 .hero-info p{
@@ -176,6 +177,108 @@ main{
     max-width: 1400px;
     text-align: center;
     line-height: 30px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background: linear-gradient(to bottom, var(--background), var(--bg-violeta));
+    /* background-color: var(--bg-violeta); */
+    border-radius: 15px;
+    max-width: 1200px;
+}
+
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px
+}
+
+.contacto-dir,
+.contacto-tel,
+.contacto-mail,
+.contacto-wap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#contact img{
+    border-radius: 15px;
+}
+.contacto h2{
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-violeta);
+    padding: 30px 30px 20px 30px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 20%; */
+    align-items: center;
+    gap: 25px;
+}
+
+.redes img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    width: 60px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   color: var(--celeste); 
+}
+
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.legales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.legales p{
+    color: white;
+    font-size: 17px;
 }
 
 /* RESPONSIVE */
