@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: "Casadio";
-    src:url("./assets/fonts/hadfield_strip.otf");
+    src:url("/assets/fonts/hadfield_strip.otf");
 }
 
 nav{
@@ -72,12 +72,12 @@ main{
     background-repeat: no-repeat;
     background-size: cover; */
     background-color: #BCBCBC;
-    max-width: 1300px;
+    max-width: 1200px;
     margin-top: 120px;
     box-shadow:10px 10px 30px black;
-    border-radius: 0 0 10px 10px; 
+    border-radius: 0 0 5px 5px;
        /* bordes */
-       height: 650px;
+    height: 650px;
        /* bordes */
 }
 
@@ -117,6 +117,7 @@ main{
     gap: 90px;
     justify-content: flex-end;
     width: 100%;
+    padding-bottom: 40px;
 }
 
 .hero-btn a{
@@ -150,12 +151,18 @@ main{
     align-items: flex-end;
     justify-content: flex-end;
     border-image-width: cover;
+    height: 650px;
+}
+
+.img-1vino{
+    display: none !important;
 }
 
 #about{
     display: flex;
     max-width: 1200px;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 /* .forma-izq{
@@ -176,16 +183,18 @@ main{
 
 .forma-izq{
     position:absolute;
-    left: -60px;
+    left: 0px;
     width: 20%;
-    top: 720px;
+    /* height: 100%; */
+    top: 815px;
 }
 
 .forma-der{
     position:absolute;
-    right: -60px;
+    right: 0px;
     width: 20%;
-    top: 720px;
+    /* height: 100%; */
+    top: 815px;
 }
 
 .about-info{
@@ -203,12 +212,18 @@ main{
     color: var(--bg-violeta);
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .about-info h2{
     display: flex;
     color: var(--celeste);
     font-size: 55px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 80px;
+    /* padding-bottom: 20px; */
 }
 
 .about-info h3{
@@ -217,6 +232,9 @@ main{
     font-size: 35px;
     font-style: italic;
     font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about-info p{
@@ -238,24 +256,24 @@ main{
     justify-content: center;
     align-items: center;
     padding: 50px;
-    max-width: 1600px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    max-width: 1800px;
+    margin: 100px 50px 80px 50px;
+    background-color: #BAA238;
+    border-radius: 5px;
 }
 
 .servicios-cards{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 40px;
-    gap:80px;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .servicios-cards p{
     color: white;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 100;
+    line-height:30px;
 }
 
 .card-bodega,
@@ -268,23 +286,16 @@ main{
     text-align: center;
     padding: 20px;
     gap: 20px;
+    width: 28%;
+    /* background-color: ; */
+    border-radius: 15px;
+    /* border: var(--celeste) solid; */
+    background-color: rgba(0, 0, 0, 0.199);
 }
-/* 
-.card-bodega img,
-.card-degustacion img,
-.card-envio img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
-
 
 #servicios h2{
     display: flex;
-    color: var(--celeste);
+    color: var(--bg-violeta);
     font-size: 45px;
     font-weight: 200;
 }
@@ -296,21 +307,22 @@ main{
     font-weight: 100;
 }
 
+
 #contact{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 100%;
     padding: 30px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 0px 50px 80px 50px;
     background: linear-gradient(to bottom, var(--background), var(--bg-violeta));
     /* background-color: var(--bg-violeta); */
-    border-radius: 15px;
+    border-radius: 5px;
     max-width: 1200px;
-    box-shadow:10px 10px 30px black;
+    /* box-shadow:10px 10px 30px black; */
 }
+
 
 
 
@@ -336,27 +348,35 @@ main{
 .contacto img{
     width: 20%;
 }
-#contact img{
-    border-radius: 15px;
+
+.contacto-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-img img{
+    border-radius: 5px;
 }
 .contacto h2{
     color: white;
 }
 
-footer{
+#footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--bg-violeta);
     padding: 30px 30px 20px 30px;
+    height: 200px;
 }
 
 .redes{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* width: 20%; */
     align-items: center;
     gap: 25px;
+    width: 33%;
+    flex-wrap: wrap;
 }
 
 .redes img{
@@ -372,6 +392,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 33%;
 }
 
 .logo h2{
@@ -379,7 +400,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-   color: var(--celeste); 
+    color: var(--celeste); 
 }
 
 .logo img{
@@ -389,22 +410,25 @@ footer{
     padding-bottom: 10px;
 }
 
-.legales{
+.diseño{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 33%;
 }
 
-.legales p{
+.diseño p{
     color: white;
     font-size: 17px;
+    text-align: center;
 }
+
 
 /* RESPONSIVE */
 
-@media(max-width: 1400px){
+/* @media(max-width: 1400px){
     .hero-img img{
         display: flex;
         align-items: center;
@@ -463,4 +487,4 @@ footer{
             justify-content: center;
             padding-left: 0px;
         }
-}
+} */

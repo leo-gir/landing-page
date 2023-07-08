@@ -1,0 +1,61 @@
+@media(max-width: 1200px) {
+    #hero {
+        max-width: 900px;
+    }
+
+    .img-3vinos{
+        display: none !important;
+    }
+
+    .img-1vino{
+        display: flex !important;
+    }
+
+    #about{
+        max-width: 900px;
+    }
+
+    .about-info p{
+        max-width: 90%;
+    }
+
+    .forma-izq{
+        height: 600px;
+    }
+    
+    .forma-der{
+        height: 600px;
+    }
+
+    #servicios{
+        margin: 50px 20px 50px 20px;
+        padding: 20px;
+    }
+
+    .card-bodega,
+    .card-degustacion,
+    .card-envio{
+        width: 33%;
+    }
+
+    .servicios-cards{
+        gap:20px;
+    }
+
+    #contact{
+        max-width: 900px;
+    }
+
+    .contacto-img img{
+        width: 100%;
+    }
+
+    .redes,
+    .diseño{
+        width: 25%;
+    }
+
+    .logo{
+        width: 40%;
+    }
+}   
