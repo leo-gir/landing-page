@@ -1,61 +1,581 @@
+/* RESPONSIVE 1200 px - 993 px */
 @media(max-width: 1200px) {
+
+    /* >>>> HERO <<<< */
     #hero {
         max-width: 900px;
     }
 
-    .img-3vinos{
+    .img-3vinos {
         display: none !important;
     }
 
-    .img-1vino{
+    .img-1vino {
         display: flex !important;
     }
 
-    #about{
+    /* >>>> ABOUT <<<< */
+    #about {
         max-width: 900px;
     }
 
-    .about-info p{
+    .about-info p {
         max-width: 90%;
     }
 
-    .forma-izq{
-        height: 600px;
-    }
-    
-    .forma-der{
+    .forma-izq {
         height: 600px;
     }
 
-    #servicios{
+    .forma-der {
+        height: 600px;
+    }
+
+    /* >>>> CARDS <<<< */
+    #servicios {
         margin: 50px 20px 50px 20px;
         padding: 20px;
     }
 
     .card-bodega,
     .card-degustacion,
-    .card-envio{
+    .card-envio {
         width: 33%;
     }
 
-    .servicios-cards{
-        gap:20px;
+    .servicios-cards {
+        gap: 20px;
     }
 
-    #contact{
+    /* >>>> CONTACTO <<<< */
+    #contact {
         max-width: 900px;
     }
 
-    .contacto-img img{
+    .contacto-img img {
         width: 100%;
     }
 
+    /* >>>> FOOTER <<<< */
     .redes,
-    .diseño{
+    .diseño {
         width: 20%;
     }
 
-    .logo{
+    .logo {
         width: 40%;
     }
-}   
+}
+
+
+/* RESPONSIVE 992 px - 769 px */
+@media(max-width: 992px) {
+
+    /* >>>> HERO <<<< */
+    #hero {
+        max-width: 750px;
+    }
+
+    .img-3vinos {
+        display: none !important;
+    }
+
+    .hero-img {
+        max-width: 50%;
+    }
+
+    .img-1vino {
+        display: none !important;
+    }
+
+    .img-vino-chico {
+        display: flex !important;
+    }
+
+
+    /* >>>> ABOUT <<<< */
+    #about {
+        max-width: 700px;
+    }
+
+    .about-info p {
+        max-width: 90%;
+    }
+
+    .forma-izq {
+        display: none;
+    }
+
+    .forma-der {
+        display: none;
+    }
+
+
+    /* >>>> CARDS <<<< */
+    #servicios {
+        margin: 50px 20px 50px 20px;
+        padding: 20px;
+    }
+
+    .card-bodega,
+    .card-degustacion,
+    .card-envio {
+        min-width: 45%;
+    }
+
+    .servicios-cards {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+
+    /* >>>> CONTACTO <<<< */
+    #contact {
+        max-width: 700px;
+    }
+
+    .contacto-img img {
+        width: 100%;
+    }
+
+
+    /* >>>> FOOTER <<<< */
+    .redes,
+    .diseño {
+        width: 30%;
+    }
+
+    .logo {
+        width: 33%;
+    }
+}
+
+/* RESPONSIVE 768 px - 577 px */
+@media(max-width: 768px) {
+
+    /* >>>> NAVBAR <<<< */
+    .navbar ul {
+        background-color: var(--bg-violeta);
+        width: 100%;
+        height: calc(70vh - 120px);
+        position: absolute;
+        top: 110px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        border-radius: 0 0 5px 5px;
+        display: none;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #toggle-menu:checked~.nav-list {
+        display: flex;
+    }
+
+
+    /* >>>> HERO <<<< */
+    #hero {
+        width: 90%;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .hero-img {
+        width: 0%;
+    }
+
+    .hero-info h2 {
+        justify-content: end;
+        align-items: end;
+        text-align: center;
+        padding-bottom: 50px;
+        font-family: 'Casadio', sans-serif;
+        font-weight: 200;
+        font-size: 80px;
+        color: var(--rosa);
+    }
+
+    .hero-info p {
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        font-style: italic;
+        padding-bottom: 50px;
+        line-height: 45px;
+
+    }
+
+    .hero-btn a {
+        min-width: 150px;
+    }
+
+    .img-3vinos {
+        display: none !important;
+    }
+
+    .img-1vino {
+        display: none !important;
+    }
+
+    .img-vino-chico {
+        display: none !important;
+    }
+
+
+    /* >>>> ABOUT <<<< */
+    #about {
+        max-width: 576px;
+    }
+
+    .about-info h1 {
+        font-size: 130px;
+    }
+
+    .about-info h2 {
+        font-size: 40px;
+        line-height: 50px;
+        padding-bottom: 20px;
+    }
+
+    .about-info h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .about-info p {
+        max-width: 80%;
+        font-size: 20px;
+    }
+
+    .forma-izq {
+        display: none;
+    }
+
+    .forma-der {
+        display: none;
+    }
+
+
+    /* >>>> CARDS <<<< */
+    .card-bodega,
+    .card-degustacion,
+    .card-envio {
+        width: 100%;
+    }
+
+
+    /* >>>> CONTACTO <<<< */
+    #contact {
+        max-width: 550px !important;
+        flex-wrap: wrap;
+        margin: 0px 20px 50px 20px;
+    }
+
+    .contacto {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .contacto-dir,
+    .contacto-tel,
+    .contacto-mail,
+    .contacto-wap {
+        font-size: 15px;
+        width: 40%;
+    }
+
+    .contacto-img img {
+        width: 100%;
+    }
+
+    .contacto-img {
+        width: 80%;
+    }
+
+
+    /* >>>> FOOTER <<<< */
+    #footer {
+        padding: 10px;
+    }
+
+    .redes {
+        width: 20%;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .logo img {
+        width: 90px !important;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .redes img {
+        width: 40px;
+        gap: 10px;
+    }
+
+    .diseño {
+        width: 20%;
+        gap: 0px;
+    }
+
+    .diseño p {
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+}
+
+/* RESPONSIVE 576 px - 320 px */
+@media(max-width: 576px) {
+
+    /* >>>> NAVBAR <<<< */
+    .navbar ul {
+        background-color: var(--bg-violeta);
+        width: 100%;
+        height: calc(70vh - 120px);
+        position: absolute;
+        top: 110px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        border-radius: 0 0 5px 5px;
+        display: none;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #toggle-menu:checked~.nav-list {
+        display: flex;
+    }
+
+
+    /* >>>> HERO <<<< */
+    #hero {
+        max-width: 90%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero-info h2 {
+        font-size: 50px;
+        padding: 0;
+        line-height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-info p {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 30px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero-btn a {
+        font-size: 13px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .img-3vinos {
+        display: none !important;
+    }
+
+    .img-1vino {
+        display: none !important;
+    }
+
+    .img-vino-chico {
+        display: none !important;
+    }
+
+
+    /* >>>> ABOUT <<<< */
+    #about {
+        width: 90%;
+    }
+
+    .about-info h1 {
+        font-size: 75px;
+        padding-bottom: 10px;
+    }
+
+    .about-info h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+
+    .about-info h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .about-info p {
+        max-width: 90%;
+        font-size: 18px
+    }
+
+    .forma-izq {
+        display: none;
+    }
+
+    .forma-der {
+        display: none;
+    }
+
+
+    /* >>>> CARDS <<<< */
+    #servicios {
+        margin: 50px 20px 50px 20px;
+        padding: 20px;
+    }
+
+    #servicios h2 {
+        font-size: 40px;
+    }
+
+    #servicios h3 {
+        line-height: 30px;
+    }
+
+    .servicios-cards p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .card-bodega,
+    .card-degustacion,
+    .card-envio {
+        min-width: 90%;
+    }
+
+    .card-bodega img,
+    .card-degustacion img,
+    .card-envio img {
+        width: 130px;
+    }
+
+    .servicios-cards {
+        gap: 20px;
+    }
+
+
+    /* >>>> CONTACTO <<<< */
+    #contact {
+        max-width: 90% !important;
+        margin: 0px 20px 50px 20px;
+    }
+
+    .contacto {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .contacto-dir,
+    .contacto-tel,
+    .contacto-mail,
+    .contacto-wap {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .contacto img {
+        width: 18%;
+    }
+
+    .contacto-img img {
+        width: 100%;
+    }
+
+    .contacto-img {
+        width: 100%;
+    }
+
+
+    /* >>>> FOOTER <<<< */
+    #footer {
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .redes {
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .logo img {
+        width: 90px !important;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .redes img {
+        width: 40px;
+        gap: 10px;
+    }
+
+    .diseño {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .diseño p {
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+}

@@ -20,18 +20,23 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="index.html"><img src="./assets/img/logo80.png" alt="logo" /></a>
-            <ul>
-                <li><a href="index.html" class="active">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
+
+            <label for="toggle-menu" class="menu-label"><img src="./assets/img/bars.png" alt="menu"></label>
+            <input type="checkbox" id="toggle-menu">
+
+            <ul class="nav-list">
+                <li><a href="#hero" class="active">INICIO</a></li>
+                <li><a href="#about">NOSOTROS</a></li>
+                <li><a href="#servicios">PRODUCTOS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- >>>> HERO <<<< -->
         <section id="hero">
             <div class="hero-info">
                 <h2>sabores que se funden</h2>
@@ -51,9 +56,12 @@
             <div class="hero-img">
                 <img src="./assets/img/vinos.png" class="img-3vinos" alt="botellas-vino" />
                 <img src="./assets/img/vino.png" class="img-1vino" alt="botella-vino">
+                <img src="./assets/img/vino-chico.png" class="img-vino-chico" alt="botella-vino">
             </div>
         </section>
 
+
+        <!-- >>>> ABOUT <<<< -->
         <section id="about">
             <img src="./assets/img/formasizq.png" class="forma-izq" alt="">
             <img src="./assets/img/formasder.png" class="forma-der" alt="">
@@ -72,6 +80,8 @@
             </div>
         </section>
 
+
+        <!-- >>>> CARDS <<<< -->
         <section id="servicios">
             <h2>SERVICIOS</h2>
             <div class="servicios-cards">
@@ -107,7 +117,9 @@
             </div>
         </section>
 
-        <section id="contact">  
+
+        <!-- >>>> CONTACTO <<<< -->
+        <section id="contact">
             <div class="contacto">
                 <h2>Contactanos</h2>
                 <div class="contacto-dir">
@@ -133,6 +145,8 @@
         </section>
     </main>
 
+
+    <!-- >>>> FOOTER <<<< -->
     <footer id="footer">
         <div class="redes">
             <a href="www.instagram.com"><img src="./assets/img/ig.png" alt="ig-icon" /></a>
